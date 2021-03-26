@@ -1,6 +1,6 @@
 <h1>Tempates project</h1>
 
-<h2>About laravel shop</h2>
+<h2>About this project</h2>
 It is simple templates project.
 All project created with html, css, and JavaScript.
 
