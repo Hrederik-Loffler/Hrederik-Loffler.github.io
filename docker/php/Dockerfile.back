@@ -1,0 +1,3 @@
+FROM php:7.4-apache
+
+RUN groupadd --gid=1000 hrederik && useradd -u 1000 -N -G www-data --gid=1000 -s /bin/bash -m hrederik
