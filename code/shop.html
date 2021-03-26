@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Playfair+Display&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/shop.css">
+    <script src="https://kit.fontawesome.com/2300d0ceda.js" crossorigin="anonymous"></script>
+    <title>Shoping Page</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <img src="img/logo.svg" alt="" class="header__logo">
+            <nav class="header-nav">
+                <ul class="header-nav__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a class="active" href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="header-icons__link"><i class="header-icons__item fas fa-search"></i></a>
+                <a href="#" class="header-icons__link"><i class="header-icons__item far fa-user"></i></a>
+                <a href="#" class="header-icons__link"><i class="header-icons__item fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+
+
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+
+
+    </div>
+</header>
+
+<div class="filters-wrapper">
+    <div class="container">
+        <div class="filters-wrapper__inner">
+
+            <form action="#" class="filters-form">
+                <div class="filter-inner__content">
+                    <div class="filter-content__title">Show</div>
+                    <select name="" id="">
+                        <option selected disabled value="0">Popular</option>
+                        <option value="1">New one</option>
+                    </select>
+                </div>
+
+                <div class="filter-inner__content">
+                    <div class="filter-content__title">Price</div>
+                    <select name="" id="">
+                        <option selected disabled value="0">Any</option>
+                    </select>
+                </div>
+
+                <div class="filter-inner__content">
+                    <div class="filter-content__title">Brand</div>
+                    <select name="" id="">
+                        <option selected disabled value="0">Any</option>
+                    </select>
+                </div>
+
+                <div class="filter-inner__content__size">
+                    <div class="filter-content__title size__title">Size</div>
+                    <input class="radio__input" type="radio" value="1" name="sizeRadio" id="radioSizeId1">
+                    <label class="radio__size__label" for="radioSizeId1">XS</label>
+
+                    <input class="radio__input" type="radio" value="2" name="sizeRadio" id="radioSizeId2">
+                    <label class="radio__size__label" for="radioSizeId2">S</label>
+
+                    <input class="radio__input" type="radio" value="3" name="sizeRadio" id="radioSizeId3">
+                    <label class="radio__size__label" for="radioSizeId3">M</label>
+
+                    <!-- <input class="radio__input" type="radio" value="4" name="sizeRadio" id="radioSizeId4">
+                    <label class="radio__size__label" for="radioSizeId4">L</label>
+
+                    <input class="radio__input" type="radio" value="5" name="sizeRadio" id="radioSizeId5">
+                    <label class="radio__size__label" for="radioSizeId5">XL</label> -->
+                </div>
+
+                <div class="filter-inner__content">
+                    <div class="filter-content__title">Color</div>
+
+                </div>
+
+                <div class="filter-inner__content">
+                    <div class="filter-content__item">
+                        <button onclick="gridView()"><i class="fa fa-th-large"></i>Grid</button>
+                        <button onclick="listView()"><i class="fa fa-bars"></i>List</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<section class="product-cards">
+    <div class="container">
+        <div class="row">
+
+            <div class="product-card">
+                <img src="img/card/1.png" alt="" class="product-card__image">
+                <div class="wraper">
+                    <div class="product-card__title">Women's costume Yves Saint Laurent</div>
+                    <p class="product-card__desc">
+                        Fashion is something we deal with everyday. Even people who say t…
+                    </p>
+                </div>
+                <div class="product-card__price">
+                    <div class="product-card__price__cost">
+                        $1140
+                    </div>
+                    <div class="product-card__price__btn">
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/card/2.png" alt="" class="product-card__image">
+                <div class="wraper">
+                    <div class="product-card__title">Men’s black hat Gucci</div>
+                    <p class="product-card__desc">
+                        The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de...
+                    </p>
+                </div>
+                <div class="product-card__price">
+                    <div class="product-card__price__cost">
+                        $1140
+                    </div>
+                    <div class="product-card__price__btn">
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/card/3.png" alt="" class="product-card__image">
+                <div class="wraper">
+                    <div class="product-card__title">Dress Karl Lagerfeld</div>
+
+                    <p class="product-card__desc">
+                        Another masterpiece from the legendary designer. He designed new dress dev…
+                    </p>
+                </div>
+                <div class="product-card__price">
+                    <div class="product-card__price__cost">
+                        $1140
+                    </div>
+                    <div class="product-card__price__btn">
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/.ROW--------------->
+
+        <div class="row">
+            <div class="product-card">
+                <img src="img/card/4.png" alt="" class="product-card__image">
+                <div class="wraper">
+                    <div class="product-card__title">Women's costume Yves Saint Laurent</div>
+                    <p class="product-card__desc">
+                        Fashion is something we deal with everyday. Even people who say t…
+                    </p>
+                </div>
+                <div class="product-card__price">
+                    <div class="product-card__price__cost">
+                        $1140
+                    </div>
+                    <div class="product-card__price__btn">
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/card/5.png" alt="" class="product-card__image">
+                <div class="wraper">
+                    <div class="product-card__title">Men’s black hat Gucci</div>
+                    <p class="product-card__desc">
+                        The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de...
+                    </p>
+                </div>
+                <div class="product-card__price">
+                    <div class="product-card__price__cost">
+                        $1140
+                    </div>
+                    <div class="product-card__price__btn">
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="img/card/6.png" alt="" class="product-card__image">
+                <div class="wraper">
+                    <div class="product-card__title">Dress Karl Lagerfeld</div>
+                    <p class="product-card__desc">
+                        Another masterpiece from the legendary designer. He designed new dress dev…
+                    </p>
+                </div>
+                <div class="product-card__price">
+                    <div class="product-card__price__cost">
+                        $1140
+                    </div>
+                    <div class="product-card__price__btn">
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.ROW--------------->
+        <div class="pagination" id="pagination">
+            <!-- <button class="btn-prev" id="paginationNext">
+                <span>prev<i class="fas fa-arrow-left"></i></span>
+            </button> -->
+            <div class="pagination__inner">
+                <ul id="paginationList">
+                    <!-- <li><span><i class="fas fa-arrow-left"></i> Prev</span></li>
+                    <li class="numb"><span>1</span></li>
+                    <li class="numb"><span>2</span></li>
+                    <li class="dots"><span>...</span></li>
+                    <li class="numb"><span>3</span></li>
+                    <li class="numb active"><span>4</span></li>
+                    <li class="dots"><span>...</span></li>
+                    <li class="numb"><span>5</span></li>
+                    <li class="numb"><span>6</span></li>
+                    <li><span>Next <i class="fas fa-arrow-right"></i></span></li> -->
+                </ul>
+            </div>
+
+            <!-- <button class="btn-prev" id="paginationPrev">
+                <span>next<i class="fas fa-arrow-right"></i></span>
+            </button> -->
+        </div>
+    </div>
+    <!----./container------------>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+
+            <div class="footer-content__item">
+                <div class="footer-content__title">Hot links</div>
+                <div class="footer-content__nav">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__links">
+                            <li><a class="link" href="#">Home</a></li>
+                            <li><a class="active link" href="#">Shop</a></li>
+                            <li><a class="link" href="#">Blog</a></li>
+                            <li><a class="link" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-content__item">
+                <div class="footer-content__title">More info</div>
+                <div class="footer-content__nav">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__links">
+                            <li><a class="link" href="#">How it works</a></li>
+                            <li><a class="active link" href="#">About us</a></li>
+                            <li><a class="link" href="#">Decline rules</a></li>
+                            <li><a class="link" href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-content__item">
+                <div class="footer-content__title">Customer care</div>
+                <div class="footer-content__nav">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__links">
+                            <li><a class="link" href="#">FAQ</a></li>
+                            <li><a class="active link" href="#">Terms of use</a></li>
+                            <li><a class="link" href="#">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-content__item">
+                <div class="footer-content__title">Get newsletter</div>
+                <div class="footer-content__nav">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__links">
+                            <li><a class="link" href="#">Get updates about style</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <form class="footer-form" action="">
+                    <input class="footer-form__input" type="email" name="email" placeholder="Type your email…">
+                </form>
+            </div>
+
+        </div>
+        <!-------./footer-content-->
+    </div>
+    <!-------./container-->
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright-inner">
+                <div class="copyright-author">
+                    © Clay Shop all rights reserved
+                </div>
+                <div class="social-icon">
+                    <a href="" class="social-icon__link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="social-icon__link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon__link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-------./container-->
+    </div>
+    <!-------./copyright-->
+</footer>
+
+<script src="js/shop.js"></script>
+</body>
+
+</html>
