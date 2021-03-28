@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  &db-service test-mysql:
+  &db-service test-mysql: #we need to use not a ALIAS we need to use service name to connect to db
     container_name: *db-service
     hostname: *db-service
     image: mysql:5.7
