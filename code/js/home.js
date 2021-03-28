@@ -19,7 +19,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 661,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
@@ -35,7 +35,6 @@ $(document).ready(function () {
         ]
     });
 
-    777777
     sliderShop.slick({
         infinite: true,
         slidesToShow: 3,
@@ -53,7 +52,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 769,
+                breakpoint: 881,
                 settings: {
                     infinite: true,
                     slidesToShow: 2,
@@ -61,7 +60,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 500,
+                breakpoint: 551,
                 settings: {
                     infinite: true,
                     slidesToShow: 1,

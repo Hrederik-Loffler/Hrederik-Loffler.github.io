@@ -173,6 +173,7 @@ nav li a.active::before {
 .drop-menu__content {
     display: none;
 }
+
 .drop-menu__content__flex {
     display: flex;
     flex-wrap: wrap;
@@ -271,7 +272,6 @@ nav li a.active::before {
     color: #ffffff;
     text-align: center;
 }
-
 
 
 /*INTRO CLOSE
@@ -549,6 +549,13 @@ nav li a.active::before {
     margin-right: 0;
 }
 
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 24px 32px 0px 32px;
+}
+
 .slider-shop__item__img {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -557,7 +564,7 @@ nav li a.active::before {
 .slider-shop__item__title {
     font-size: 34px;
     line-height: 1.33;
-    padding: 24px 32px 90px 32px;
+    margin-bottom: 50px;
     max-width: 300px;
 }
 
@@ -570,21 +577,14 @@ nav li a.active::before {
 
 .slider-shop__item__price {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 24px;
-}
-
-.slider-shop__item__price .baks {
-    font-size: 24px;
-    line-height: 1.33;
-    margin-right: 8px;
-    padding-left: 32px;
 }
 
 .slider-shop__item__price .cost {
     font-size: 34px;
     line-height: 1.33;
-    margin-right: 80px;
 }
 
 .slider-shop__item__link {
@@ -799,7 +799,7 @@ nav li a.active::before {
 
 }
 
-.slider-shop .slick-prev{
+.slider-shop .slick-prev {
     position: absolute;
     width: 16px;
     height: 8px;
@@ -865,12 +865,16 @@ button {
     outline-style: none;
 }
 
-
 /*MEDIA
 =====================*/
 
-@media (max-width: 1150px) {
+@media (max-width: 1366px) {
+    .logo {
+        margin-left: 32px;
+    }
+}
 
+@media (max-width: 1140px) {
 
     .intro__inner {
         padding-left: 32px;
@@ -897,6 +901,14 @@ button {
         bottom: 0;
     }
 
+    .slider-shop__header h2 {
+        margin-left: 15px;
+    }
+
+    .slick-initialized .slick-slide:first-child {
+        margin-left: 10px;
+    }
+
 }
 
 
@@ -909,33 +921,12 @@ button {
     }
 
     .intro-title {
-        margin-left: 0px;
         margin-top: 55px;
     }
 
-    .intro-text {
-        margin-left: 0px;
-    }
-
     .intro__link {
-        margin-left: 0px;
+
         margin-bottom: 25px;
-    }
-
-    .slider-shop__item {
-        min-height: 590px;
-    }
-
-    .slick-initialized .slick-slide:first-child {
-        margin-left: 10px;
-    }
-
-    .slider-shop__header h2 {
-        margin-left: 15px;
-    }
-
-    .slider-shop__item__price .cost {
-        margin-right: 55px;
     }
 
     .footer-content__item:first-child {
@@ -991,10 +982,42 @@ button {
         width: 100%;
 
     }
+
+    .slider-shop__item__img {
+        width: 100%;
+    }
+
+    .collection-content {
+        height: 370px;
+    }
+
+    .collection-content__right__light {
+        margin-right: 5px;
+    }
+
+
+    .collection-content__right__light .count {
+        padding-top: 80px;
+    }
+
+    .collection-content__right__light .title {
+        padding-bottom: 20px;
+    }
+
+    .collection-content__right__dresses .link {
+        margin-bottom: 52px;
+    }
+
+    .collection-content__right__dresses .title {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
 }
 
 
 @media (max-width: 991px) {
+
 
     /*===HEADER=== */
 
@@ -1057,32 +1080,24 @@ button {
         display: block;
     }
 
-    .collection-content {
-        height: 370px;
+    .slider-shop__item__link {
+        padding: 10px 8px;
     }
 
-    .collection-content__right__light {
-        margin-right: 5px;
+    .slider-shop__item__title {
+        font-size: 31px;
+    }
+}
+
+
+@media (max-width: 880px) {
+    .slider-shop__item__title {
+        font-size: 34px;
     }
 
-
-    .collection-content__right__light .count {
-        padding-top: 80px;
+    .slider-shop__item__link {
+        padding: 12px 16px;
     }
-
-    .collection-content__right__light .title {
-        padding-bottom: 20px;
-    }
-
-    .collection-content__right__dresses .link {
-        margin-bottom: 52px;
-    }
-
-    .collection-content__right__dresses .title {
-        font-size: 28px;
-        padding-bottom: 20px;
-    }
-
 }
 
 @media (max-width: 812px) {
@@ -1094,17 +1109,11 @@ button {
     }
 
     .intro-title {
-        margin-left: 0px;
         margin-top: 45px;
         font-size: 40px;
     }
 
-    .intro-text {
-        margin-left: 0px;
-    }
-
     .intro__link {
-        margin-left: 0px;
         margin-bottom: 25px;
     }
 
@@ -1127,6 +1136,7 @@ button {
     .slider .slick-list {
         height: 240px;
     }
+
     .slider-wrapper__item {
         width: 140px;
         height: 200px;
@@ -1135,33 +1145,21 @@ button {
 
     .slider-wrapper__item:first-child {
         overflow: hidden;
-        margin-left: 0px;
+
     }
 
     .slider-wrapper__item h3 {
         font-size: 15px;
     }
 
-    .slider-shop__item {
-        min-height: 550px;
-    }
-
-    .slider-shop__header h2 {
-        margin-left: 15px;
-    }
-
     .slider-shop__item__title {
-        font-size: 25px;
+        font-size: 36px;
         max-width: 100%;
     }
 
-    .slider-shop__item__link {
-        padding: 10px 8px;
-    }
 
     .slider-shop__item__price .cost {
         margin-right: 45px;
-        font-size: 27px;
     }
 
     .footer-content__item {
@@ -1199,7 +1197,8 @@ button {
 
 }
 
-@media (max-width: 701px) {
+
+@media (max-width: 705px) {
 
     /*===INTRO=== */
 
@@ -1208,18 +1207,15 @@ button {
     }
 
     .intro-title {
-        margin-left: 40px;
         margin-top: 30px;
         font-size: 25px;
     }
 
     .intro-text {
-        margin-left: 40px;
         font-size: 14px;
     }
 
     .intro__link {
-        margin-left: 40px;
         margin-bottom: 25px;
         width: 115px;
         height: 40px;
@@ -1251,13 +1247,19 @@ button {
         font-size: 26px;
     }
 
+    .slider-wrapper__item:first-child {
+        margin-left: 0px;
+    }
+
+
     .slider-shop__item__title {
-        font-size: 21px;
+        font-size: 30px;
     }
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 660px) {
+
     .collection-content {
         height: auto;
     }
@@ -1285,13 +1287,18 @@ button {
         margin-top: 10px;
     }
 
+    .slider-wrapper__item:first-child {
+        margin-left: 30px;
+        overflow: hidden;
+    }
+
+
     .slider-shop__item__price {
         justify-content: space-between;
     }
 
     .slider-shop__item__title {
         font-size: 30px;
-        padding: 20px 32px 75px 32px;
     }
 
     .slider-shop__item__price .cost {
@@ -1311,12 +1318,12 @@ button {
 
 @media (max-width: 590px) {
 
-    .slider-shop__item {
-        min-height: 560px;
-    }
-
     .slider-shop__item__title {
         font-size: 25px;
+    }
+
+    .slider-shop__item__link {
+        padding: 12px 12px;
     }
 
 
@@ -1326,16 +1333,26 @@ button {
 }
 
 @media (max-width: 550px) {
-    .slider-shop__item__title {
-        font-size: 23px;
+
+    .slider-wrapper__item:first-child {
+        margin-left: 0px;
     }
 
-    .slider-shop__item__link {
-        padding: 12px 20px;
+
+    .slider-shop__item__title {
+        font-size: 41px;
     }
 
     .footer-content__item {
         margin-right: 55px;
+    }
+
+    .slider-shop__item__price .cost {
+        font-size: 33px;
+    }
+
+    .slider-shop__item__link {
+        padding: 14px 18px;
     }
 
     .footer nav li {
@@ -1350,12 +1367,12 @@ button {
     .footer-content__item {
         padding-top: 25px;
     }
+
 }
 
 @media (max-width: 500px) {
 
     .intro-title {
-        margin-left: 0px;
         margin-top: 30px;
         margin-bottom: 10px;
         font-size: 18px;
@@ -1364,14 +1381,12 @@ button {
     }
 
     .intro-text {
-        margin-left: 0px;
         font-size: 14px;
         max-width: 250px;
         margin-bottom: 18px;
     }
 
     .intro__link {
-        margin-left: 0px;
         margin-bottom: 25px;
         width: 115px;
         height: 40px;
@@ -1401,23 +1416,10 @@ button {
 
     .slider-shop__item {
         margin-right: 0;
-        min-height: 520px;
-    }
-
-    .slider-shop__item__img {
-        width: 100%;
-    }
-
-    .slider-shop__item__price {
-        justify-content: end;
     }
 
     .slider-shop__item__title {
         max-width: 360px;
-    }
-
-    .slider-shop__item__price .cost {
-        margin-right: 175px;
     }
 
     .slick-initialized .slick-slide:first-child {
@@ -1483,117 +1485,99 @@ button {
         font-size: 12px;
     }
 
+}
 
+@media (max-width: 375px) {
 
-    @media (max-width: 375px) {
+    .intro-title {
+        margin-top: 30px;
+        font-size: 17px;
+        max-width: 190px;
+    }
 
-        .intro-title {
-            margin-left: 0px;
-            margin-top: 30px;
-            font-size: 17px;
-            max-width: 190px;
-        }
+    .intro-text {
+        font-size: 13px;
+        max-width: 220px;
+    }
 
-        .intro-text {
-            margin-left: 0px;
-            font-size: 13px;
-            max-width: 220px;
-        }
+    .intro__link {
+        width: 105px;
+        height: 35px;
+        font-size: 14px;
+        padding-top: 7px;
+    }
 
-        .intro__link {
-            margin-left: 0px;
-            width: 105px;
-            height: 35px;
-            font-size: 14px;
-            padding-top: 7px;
-        }
+    .slider .slick-prev {
+        padding: 0px 35px;
+    }
 
-        .slider .slick-prev {
-            padding: 0px 35px;
-        }
+    .slider .slick-next {
+        padding: 0px 35px;
+    }
 
-        .slider .slick-next {
-            padding: 0px 35px;
-        }
+    .slider-shop__header {
+        margin-bottom: 20px;
+    }
 
-        .slider-shop__header {
-            margin-bottom: 20px;
-        }
+    .slider-shop__item__title {
+        font-size: 35px;
+    }
 
-        .slider-shop__item__price .cost {
-            margin-right: 125px;
-        }
+    .slider-shop__item__link {
+        padding: 12px 12px;
+    }
 
-        .slider-shop__item__link {
-            padding: 10px 20px;
-        }
+    .slider-shop .slick-dots {
+        top: -50px;
+    }
+}
 
-        .slider-shop .slick-dots {
-            top: -50px;
-        }
+@media (max-width: 320px) {
 
+    .intro-title {
+        margin-top: 20px;
+        font-size: 16px;
+    }
 
-        @media (max-width: 320px) {
+    .intro-text {
+        max-width: 200px;
+    }
 
-            .logo {
-                margin-left: 20px;
-            }
+    .collection-content__right__light .title {
+        font-size: 28px;
+        margin-left: 15px;
+    }
 
-            .logo__img {
-                width: 17px;
-                margin-right: 13px;
-            }
+    .collection-content__right__light .count {
+        padding-top: 63px;
+    }
 
-            .logo-title {
-                font-size: 22px;
-            }
+    .collection-content__right__dresses {
+        padding-top: 15px;
+    }
 
-            .intro-title {
-                margin-left: 0px;
-                margin-top: 20px;
-                font-size: 16px;
-            }
+    .collection-content__right__row {
+        padding-top: 10px;
+    }
 
-            .intro-text {
-                margin-left: 0px;
-                max-width: 200px;
-            }
+    .slider-shop__item__title {
+        font-size: 31px;
+    }
 
-            .intro__link {
-                margin-left: 0px;
-            }
+    .collection-content__right__row .link {
+        margin-bottom: 45px;
+    }
 
-            .collection-content__right__light .title {
-                font-size: 28px;
-                margin-left: 15px;
-            }
+    .slider-shop__item__price .cost {
+        margin-right: 75px;
+    }
 
-            .collection-content__right__light .count {
-                padding-top: 63px;
-            }
+    .slider-shop__item__link {
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
 
-            .collection-content__right__dresses {
-                padding-top: 15px;
-            }
-
-            .collection-content__right__row {
-                padding-top: 10px;
-            }
-
-            .collection-content__right__row .link {
-                margin-bottom: 45px;
-            }
-
-            .slider-shop__item__price .cost {
-                margin-right: 75px;
-            }
-
-            .slider-shop__item__link {
-                margin-bottom: 0x;
-                font-size: 13px;
-            }
-
-            .social-icon__link {
-                margin-right: 30px;
-            }
-        }
+    .social-icon__link {
+        margin-right: 30px;
+    }
+}
